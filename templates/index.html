@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Requerimiento</title>
+</head>
+<body>
+    <h1>PROYECTO ECE</h1>
+    <h2>{{ requerimientoHora }} horas</h2>
+    <h2>{{ requerimientoLumenes }} lúmenes</h2>
+
+    <h3>Editar Requerimiento Hora</h3>
+    <form method="POST" action="/editarHora">
+        <input type="text" name="nuevo_requerimiento_hora" placeholder="Nuevo requerimiento de hora">
+        <button type="submit">Enviar</button>
+    </form>
+    
+    <h3>Editar Requerimiento Lumenes</h3>
+    <form method="POST" action="/editarLumenes">
+        <input type="text" name="nuevo_requerimiento_lumenes" placeholder="Nuevo requerimiento de lumenes">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
